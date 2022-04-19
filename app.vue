@@ -1,5 +1,12 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout />
 </template>
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+</style>
