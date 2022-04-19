@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import IconHome from '~icons/ri/home2-line';
+import IconPosts from '~icons/ri/book2-line';
+import IconPages from '~icons/ri/book-line';
+
 const props = withDefaults(
   defineProps<{
     modelValue?: boolean;
@@ -28,13 +32,13 @@ watch(isOpen, (val) => {
 
 const menus = ref([
   {
-    icon: 'i-ri-home-2-line',
+    icon: IconHome,
     text: 'Dashboard',
     to: '/',
   },
   {
     text: 'Posts',
-    icon: 'i-ri-book-2-line',
+    icon: IconPosts,
     children: [
       {
         text: 'New Post',
@@ -48,7 +52,7 @@ const menus = ref([
   },
   {
     text: 'Pages',
-    icon: 'i-ri-book-line',
+    icon: IconPages,
     children: [
       {
         text: 'Login',
@@ -76,12 +80,9 @@ const menus = ref([
     >
       <nuxt-link
         to="/"
-        class="py-5 font-bold text-lg text-indigo flex gap-2 items-center justify-between sm:justify-center"
+        class="py-5 font-bold text-lg text-indigo-500 flex gap-2 items-center justify-between sm:justify-center"
       >
-        <div class="flex gap-2 items-center">
-          <div class="i-logos-vue w-5 h-5" />
-          Nuxt 3 UnoCSS
-        </div>
+        <div class="flex gap-2 items-center justify-center">Nuxt 3 WindiCSS</div>
       </nuxt-link>
       <button
         class="i-ri-close-line w-6 h-6 text inline sm:hidden"

@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import type { Component } from 'vue';
+
 defineProps<{
-  color: string;
+  color: string | Component;
   icon: string;
   count: string | number;
   text: string;
@@ -15,7 +17,7 @@ defineProps<{
       class="rounded-full w-10 h-10 flex items-center justify-center text-white flex-shrink-0"
       :class="color"
     >
-      <div class="w-5 h-5" :class="icon" />
+      <component class="w-5 h-5" :is="icon" />
     </div>
     <div>
       <h3 class="font-semibold text-xl truncate">

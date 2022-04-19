@@ -1,28 +1,33 @@
 <script lang="ts" setup>
+import RiUserLine from '~icons/ri/user-line';
+import RiBook2Line from '~icons/ri/book2-line';
+import RiChat2Line from '~icons/ri/chat2-line';
+import RiBarChartBoxLine from '~icons/ri/bar-chart-box-line';
+
 const stats = ref([
   {
     text: 'Users',
     count: '100',
-    icon: 'i-ri-user-line',
-    color: 'bg-indigo',
+    icon: RiUserLine,
+    color: 'bg-indigo-500',
   },
   {
     text: 'Posts',
     count: '20',
-    icon: 'i-ri-book-2-line',
-    color: 'bg-blue',
+    icon: RiBook2Line,
+    color: 'bg-blue-500',
   },
   {
     text: 'Comments',
     count: '500',
-    icon: 'i-ri-chat-2-line',
-    color: 'bg-orange',
+    icon: RiChat2Line,
+    color: 'bg-orange-500',
   },
   {
     text: 'Views',
     count: '12000',
-    icon: 'i-ri-bar-chart-box-line',
-    color: 'bg-emerald',
+    icon: RiBarChartBoxLine,
+    color: 'bg-emerald-500',
   },
 ]);
 </script>
